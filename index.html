@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape-Calculator</title>
+
+    <link rel="stylesheet" href="shapeprop.css" />
+  </head>
+  <body>
+    <!-- Heading -->
+    <center><h2>SHAPE CALCULATOR</h2></center>
+
+    <!-- Overall-container -->
+    <div class="container">
+      <!-- 1st-Row -->
+      <div class="row1">
+        <!-- cuboid-portion -->
+        <div class="cuboid">
+          <center><h3>Cuboid</h3></center>
+          <img
+            src="./img/cuboid.webp"
+            alt="cuboid"
+            style="height: 150px; width: 150px"
+          />
+          <br /><br />
+          <label for="cuboidlen">Length :</label
+          ><input type="text" id="cuboidlen" /><br /><br />
+          <label for="cuboidbre">Breadth :</label
+          ><input type="text" id="cuboidbre" /><br /><br />
+          <label for="cuboidhei">Height :</label
+          ><input type="text" id="cuboidhei" /><br /><br />
+          <br />
+          <h2 id="result"></h2>
+          <div class="btnrw">
+            <button onclick="cuboidcsa()" id="btn1">Curved Surface Area</button>
+            <button onclick="cuboidtsa()" id="btn2">Total Surface Area</button>
+            <button onclick="cuboidvol()" id="btn3">Volume</button>
+          </div>
+        </div>
+        <!-- Cube-portion -->
+        <div class="cube">
+          <center><h3>Cube</h3></center>
+          <img
+            src="./img/cube.jpg"
+            alt="cube"
+            style="height: 150px; width: 150px"
+          />
+          <br /><br />
+          <label for="a">A :</label><input type="text" id="a" /><br /><br />
+          <h2 id="cube-result"></h2>
+          <div class="btnrw1">
+            <button onclick="cubecsa()" id="btn1">Curved Surface Area</button>
+            <button onclick="cubetsa()" id="btn2">Total Surface Area</button>
+            <button onclick="cubevol()" id="btn3">Volume</button>
+          </div>
+        </div>
+        <!-- Right-circular-cylinder-portion -->
+        <div class="rightcircularcylinder">
+          <center><h3>Right circular cylinder</h3></center>
+          <img
+            src="./img/rightangularcylinder.jpg"
+            alt="cylinder"
+            style="height: 150px; width: 150px"
+          />
+          <br /><br />
+          <label for="rccrad">Radius :</label
+          ><input type="text" id="rccrad" /><br /><br />
+
+          <label for="rcchei">Height :</label
+          ><input type="text" id="rcchei" /><br /><br />
+          <h2 id="rcc-result"></h2>
+          <div class="btnrw2">
+            <button onclick="rcccsa()" id="btn1">Curved Surface Area</button>
+            <button onclick="rcctsa()" id="btn2">Total Surface Area</button>
+            <button onclick="rccvol()" id="btn3">Volume</button>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <hr />
+      <!-- 2nd-Row -->
+      <div class="row2">
+        <!--Right-circular-cone-portion  -->
+        <div class="rightcircularcone">
+          <center><h3>Right circular cone</h3></center>
+          <img
+            src="./img/cone.jpg"
+            alt="cone"
+            style="height: 150px; width: 150px"
+          />
+          <br /><br />
+          <label for="rccohei">Height :</label
+          ><input type="text" id="rccohei" /><br /><br />
+
+          <label for="rccorad">Radius :</label
+          ><input type="text" id="rccorad" /><br /><br />
+
+          <label for="rccolen">Length :</label
+          ><input type="text" id="rccolen" /><br /><br />
+
+          <h2 id="rcco-result"></h2>
+          <div class="btnrw3">
+            <button onclick="rccocsa()" id="btn1">Curved Surface Area</button>
+            <button onclick="rccotsa()" id="btn2">Total Surface Area</button>
+            <button onclick="rccovol()" id="btn3">Volume</button>
+          </div>
+        </div>
+        <!-- Sphere-portion -->
+        <div class="sphere">
+          <center><h3>Sphere</h3></center>
+          <img
+            src="./img/sphere (1).jpg"
+            alt="sphere"
+            style="height: 150px; width: 180px"
+          />
+          <br /><br />
+          <label for="sphrad">Radius :</label
+          ><input type="text" id="sphrad" /><br /><br />
+          <h2 id="sph-result"></h2>
+          <div class="btnrw4">
+            <button onclick="sphcsa()" id="btn1">Curved Surface Area</button>
+            <button onclick="sphtsa()" id="btn2">Total Surface Area</button>
+            <button onclick="sphvol()" id="btn3">Volume</button>
+          </div>
+        </div>
+        <!-- Hemi-sphere-portion -->
+        <div class="hemisphere">
+          <center><h3>Hemi sphere</h3></center>
+          <img
+            src="./img/hemi.jpg"
+            alt="hemisphere"
+            style="height: 150px; width: 200px"
+          />
+          <br /><br />
+          <label for="hmirad">Radius :</label
+          ><input type="text" id="hmirad" /><br /><br />
+          <h2 id="hmi-result"></h2>
+          <div class="btnrw5">
+            <button onclick="hmicsa()" id="btn1">Curved Surface Area</button>
+            <button onclick="hmitsa()" id="btn2">Total Surface Area</button>
+            <button onclick="hmivol()" id="btn3">Volume</button>
+          </div>
+          <script src="shapeprop.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
